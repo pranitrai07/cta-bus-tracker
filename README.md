@@ -23,3 +23,7 @@ The key belongs only in the backend `.env` file. Do not add it to the mobile app
 Route stop lists require both a route and a direction. For direct Stop ID lookup, pass `stopId`. Free-text stop-name search is not supported by the CTA endpoints used in this MVP.
 
 The optional `CTA_DATA_FEED` setting is for multi-feed API accounts. Confirm whether your account needs it with CTA before setting it. No prediction caching is included in this MVP.
+
+## Run API tests
+
+Run `npm test` to execute the HTTP route tests. The tests mock CTA responses, so they do not require a real API key or make network calls to CTA.
